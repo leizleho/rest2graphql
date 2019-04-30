@@ -10,10 +10,11 @@
   "author": "Emmanuel Henri",
   "license": "ISC",
   "dependencies": {
-    "body-parser": "^1.17.2",
-    "express": "^4.15.4",
-    "mongoose": "^4.11.10",
-    "nodemon": "^1.12.0"
+    "express": "^4.16.4",
+    "express-graphql": "^0.8.0",
+    "graphql": "^14.2.1",
+    "mongoose": "^4.13.18",
+    "nodemon": "^1.18.11"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
