@@ -21,9 +21,9 @@ const typeDefs = `
   }
 
   type Mutation {
-      createContact(input: ContactInput)
+      createContact(input: ContactInput): Contact
   }
 `;
 
-const schema = makeExecutableSchema({typeDefs, resolvers});
-export schema
+const schema = makeExecutableSchema({ typeDefs, resolvers });
+export { schema };
