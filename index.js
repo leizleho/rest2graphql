@@ -1,5 +1,6 @@
 import express from 'express';
 import graphqlHTTP from 'express-graphql';
+import { schema } from './src/data/schema';
 
 const app = express();
 const PORT = 8080;
