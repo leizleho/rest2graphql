@@ -4,6 +4,14 @@ export const resolvers = {
   Query: {
     getContacts: () => {
       return Contacts.find();
+    },
+    getOneContact: (root, { id }) => {
+      return new Promise((resolve, object) => {
+        Contacts.findById(id, (err, contact) => {
+          if (err) reject(err);
+          else resolve(contact);
+        });
+      });
     }
   },
 
